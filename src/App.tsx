@@ -10,11 +10,11 @@ export const App = () => {
 
   return (
     <CartProvider>
-      <Navbar onOpenCart={() => setIsCartOpen(true)} />
+      <Navbar />
       <BROOCOHero />
       <ProductGrid />
 
-      <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+      <CartDrawer />
     </CartProvider>
   );
 };
